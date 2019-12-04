@@ -15,7 +15,7 @@ def translate(n):
     
     for letter in n:
         if letter.lower() in morse_dict:
-            translation = translation + morse_dict[letter] + " "
+            translation = translation + morse_dict[letter.lower()] + " "
         else:
             translation = translation + letter
     
